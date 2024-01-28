@@ -37,17 +37,20 @@ public class GenericList<T> {
             head=head.next;
             return;
         }
-        Node<T> current = head;
-        Node<T> prev = null;
+        Node<T> current = head.next;
+        Node<T> prev = head;
 
-        while (current != null && !current.data.equals(element)) {
+        while (current != null) {
+            if(current.data.equals(element)){
+                prev=current.next;
+                return;
+            }
+
             prev = current;
             current = current.next;
         }
 
-        if (current != null) {
-            prev.next = current.next;
-        }
+
     }
 
     public void printAll() {

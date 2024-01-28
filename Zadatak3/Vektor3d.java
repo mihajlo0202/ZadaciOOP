@@ -23,6 +23,10 @@ public class Vektor3d {
         return z;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 
     @Override
     public String toString() {
