@@ -22,7 +22,7 @@ public class Main extends Application {
 
         //Map<Student, Integer> studenti = new TreeMap<>();
 
-        List<Student> studenti=new ArrayList<>();
+        List<Student> studenti=new LinkedList<>();
         public int zamisljenBroj;
 
 
